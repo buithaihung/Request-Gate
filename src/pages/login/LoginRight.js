@@ -2,10 +2,10 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 import { useThemes, Form } from './style';
 import { Grid, Box, CircularProgress, FormHelperText, Link } from '@material-ui/core';
-import GoogleLogin from 'react-google-login';
+// import GoogleLogin from 'react-google-login';
 import Title from '../../components/Title';
 import PropTypes from 'prop-types';
-import Google from '../../assets/img/gg.png';
+// import Google from '../../assets/img/gg.png';
 
 const LoginRight = (props) => {
   const {
@@ -14,8 +14,8 @@ const LoginRight = (props) => {
     valuePassword,
     onChangeEmail,
     onChangePassword,
-    onSuccess,
-    onFailure,
+    // onSuccess,
+    // onFailure,
     isLoading,
     errorEmail,
     errorPassword,
@@ -83,8 +83,8 @@ const LoginRight = (props) => {
           />
         </Form>
         <hr className={classes.hr} />
-        <Title className={classes.signinTextGG} title="Sign in with Google" variant="h3" />
-        <GoogleLogin
+        {/* <Title className={classes.signinTextGG} title="Sign in with Google" variant="h3" /> */}
+        {/* <GoogleLogin
           // clientId={CLIENT_ID}
           render={(renderProps) => (
             <Button
@@ -107,7 +107,7 @@ const LoginRight = (props) => {
           onSuccess={onSuccess}
           onFailure={onFailure}
           cookiePolicy={"single_host_origin"}
-        />
+        /> */}
       </Box>
     </Grid>
   );
